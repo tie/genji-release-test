@@ -14,3 +14,7 @@ require (
 	go.uber.org/multierr v1.6.0
 	golang.org/x/sync v0.0.0-20201207232520-09787c993a3a
 )
+
+replace github.com/tie/genji-release-test => ../../
+
+replace github.com/tie/genji-release-test/engine/badgerengine => ../../engine/badgerengine
