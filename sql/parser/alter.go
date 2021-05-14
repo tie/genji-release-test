@@ -1,8 +1,8 @@
 package parser
 
 import (
-	"github.com/genjidb/genji/query"
-	"github.com/genjidb/genji/sql/scanner"
+	"github.com/tie/genji-release-test/query"
+	"github.com/tie/genji-release-test/sql/scanner"
 )
 
 func (p *Parser) parseAlterTableRenameStatement(tableName string) (_ query.AlterStmt, err error) {

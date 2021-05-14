@@ -133,7 +133,7 @@ jobs:
           echo "::set-output name=filename::genji_${{ matrix.os }}_${{ matrix.arch }}${{ steps.go-env.outputs.exe }}"
 
       - name: Build release asset
-        run: go install github.com/genjidb/genji/cmd/genji@${{ steps.release.outputs.version }}
+        run: go install github.com/tie/genji-release-test/cmd/genji@${{ steps.release.outputs.version }}
 
       - name: Move asset to GOPATH/bin
         if: ${{ steps.go-env.outputs.hostos != matrix.os || steps.go-env.outputs.hostarch != matrix.arch }}

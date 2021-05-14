@@ -9,9 +9,9 @@ import (
 	"testing"
 
 	"github.com/dgraph-io/badger/v3"
-	"github.com/genjidb/genji"
-	"github.com/genjidb/genji/document"
-	"github.com/genjidb/genji/engine/badgerengine"
+	"github.com/tie/genji-release-test"
+	"github.com/tie/genji-release-test/document"
+	"github.com/tie/genji-release-test/engine/badgerengine"
 	"github.com/stretchr/testify/require"
 )
 

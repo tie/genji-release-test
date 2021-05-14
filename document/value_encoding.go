@@ -4,7 +4,7 @@ import (
 	"errors"
 	"io"
 
-	"github.com/genjidb/genji/binarysort"
+	"github.com/tie/genji-release-test/binarysort"
 )
 
 const (

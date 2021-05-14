@@ -1,9 +1,9 @@
 package parser
 
 import (
-	"github.com/genjidb/genji/planner"
-	"github.com/genjidb/genji/query"
-	"github.com/genjidb/genji/sql/scanner"
+	"github.com/tie/genji-release-test/planner"
+	"github.com/tie/genji-release-test/query"
+	"github.com/tie/genji-release-test/sql/scanner"
 )
 
 // parseExplainStatement parses any statement and returns an ExplainStmt object.

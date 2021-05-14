@@ -7,13 +7,13 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/genjidb/genji/binarysort"
-	"github.com/genjidb/genji/database"
-	"github.com/genjidb/genji/document"
-	"github.com/genjidb/genji/document/encoding/msgpack"
-	"github.com/genjidb/genji/engine/memoryengine"
-	"github.com/genjidb/genji/sql/parser"
-	"github.com/genjidb/genji/testutil"
+	"github.com/tie/genji-release-test/binarysort"
+	"github.com/tie/genji-release-test/database"
+	"github.com/tie/genji-release-test/document"
+	"github.com/tie/genji-release-test/document/encoding/msgpack"
+	"github.com/tie/genji-release-test/engine/memoryengine"
+	"github.com/tie/genji-release-test/sql/parser"
+	"github.com/tie/genji-release-test/testutil"
 	"github.com/stretchr/testify/require"
 )
 

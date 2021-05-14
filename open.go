@@ -5,9 +5,9 @@ package genji
 import (
 	"context"
 
-	"github.com/genjidb/genji/engine"
-	"github.com/genjidb/genji/engine/boltengine"
-	"github.com/genjidb/genji/engine/memoryengine"
+	"github.com/tie/genji-release-test/engine"
+	"github.com/tie/genji-release-test/engine/boltengine"
+	"github.com/tie/genji-release-test/engine/memoryengine"
 )
 
 // Open creates a Genji database at the given path.

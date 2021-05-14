@@ -27,7 +27,7 @@ jobs:
       # Use version retraction if we can’t safely revert release.
       # See https://blog.golang.org/go116-module-changes#TOC_5.
       #
-      GOPRIVATE: github.com/genjidb/genji
+      GOPRIVATE: github.com/tie/genji-release-test
     if: ${{ github.ref != 'refs/heads/main' }}
     steps:
       - name: Checkout code
@@ -86,7 +86,7 @@ jobs:
           echo "::set-output name=base::${base}"
           echo "::set-output name=next::${next}"
 
-      # 1.1. Prepare github.com/genjidb/genji module.
+      # 1.1. Prepare github.com/tie/genji-release-test module.
       #
       # This step will fail if version from input is not a valid semantic version for this release.
       # We use the version suggested by gorelease tool if there is no input (workflow on push event).
@@ -108,7 +108,7 @@ jobs:
       - name: Amend changelog
         run: perl -0pi -e 's/(\n.+)+\n+$//' changelog.txt
 
-      # 1.2. Prepare github.com/genjidb/genji/engine/badgerengine module.
+      # 1.2. Prepare github.com/tie/genji-release-test/engine/badgerengine module.
       #
       # Note that we use steps.changelog.outputs.version instead of steps.version.outputs.next
       # to ensure that submodule version always corresponds to root module release.
@@ -124,54 +124,54 @@ jobs:
         working-directory: engine/badgerengine
         run: perl -0pi -e 's/(\n.+)+\n+$//' changelog.txt
 
-      # 2.1. Create tag for github.com/genjidb/genji module.
+      # 2.1. Create tag for github.com/tie/genji-release-test module.
       #
-      - name: Bump github.com/genjidb/genji
+      - name: Bump github.com/tie/genji-release-test
         env:
           version: ${{ steps.changelog.outputs.version }}
         run: |
           git tag "${version}"
           git push --tags
 
-      # 2.2. Create tag for github.com/genjidb/genji/engine/badgerengine module.
+      # 2.2. Create tag for github.com/tie/genji-release-test/engine/badgerengine module.
       #
-      - name: Bump github.com/genjidb/genji/engine/badgerengine
+      - name: Bump github.com/tie/genji-release-test/engine/badgerengine
         working-directory: engine/badgerengine
         env:
           version: ${{ steps.changelog.outputs.version }}
         run: |
-          go mod edit -dropreplace=github.com/genjidb/genji
-          go mod edit -require=github.com/genjidb/genji@"${version}"
+          go mod edit -dropreplace=github.com/tie/genji-release-test
+          go mod edit -require=github.com/tie/genji-release-test@"${version}"
           go mod tidy
           git add go.mod go.sum
           git commit --allow-empty -m "Bump engine/badgerengine to ${version}"
           git tag engine/badgerengine/"${version}"
-          go mod edit -replace=github.com/genjidb/genji=../../
+          go mod edit -replace=github.com/tie/genji-release-test=../../
           go mod tidy
           git add go.mod go.sum
           git commit --allow-empty -m 'Back to devel mode in engine/badgerengine'
           git push && git push --tags
 
-      # 2.3 Create tag for github.com/genjidb/genji/cmd/genji module.
+      # 2.3 Create tag for github.com/tie/genji-release-test/cmd/genji module.
       #
-      - name: Bump github.com/genjidb/genji/cmd/genji
+      - name: Bump github.com/tie/genji-release-test/cmd/genji
         working-directory: cmd/genji
         env:
           version: ${{ steps.changelog.outputs.version }}
         run: |
           go mod edit \
-            -dropreplace=github.com/genjidb/genji \
-            -dropreplace=github.com/genjidb/genji/engine/badgerengine
+            -dropreplace=github.com/tie/genji-release-test \
+            -dropreplace=github.com/tie/genji-release-test/engine/badgerengine
           go mod edit \
-            -require=github.com/genjidb/genji@"${version}" \
-            -require=github.com/genjidb/genji/engine/badgerengine@"${version}"
+            -require=github.com/tie/genji-release-test@"${version}" \
+            -require=github.com/tie/genji-release-test/engine/badgerengine@"${version}"
           go mod tidy
           git add go.mod go.sum
           git commit --allow-empty -m "Bump cmd/genji to ${version}"
           git tag cmd/genji/"${version}"
           go mod edit \
-            -replace=github.com/genjidb/genji=../../ \
-            -replace=github.com/genjidb/genji/engine/badgerengine=../../engine/badgerengine
+            -replace=github.com/tie/genji-release-test=../../ \
+            -replace=github.com/tie/genji-release-test/engine/badgerengine=../../engine/badgerengine
           go mod tidy
           git add go.mod go.sum
           git commit --allow-empty -m 'Back to devel mode in cmd/genji'
@@ -214,5 +214,5 @@ jobs:
           body: |
             This PR merges changes made when bumping version to ${{ steps.changelog.outputs.version }}.
 
-            See https://github.com/genjidb/genji/releases/tag/cmd/genji/${{ steps.changelog.outputs.version }}
+            See https://github.com/tie/genji-release-test/releases/tag/cmd/genji/${{ steps.changelog.outputs.version }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

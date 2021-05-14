@@ -8,12 +8,12 @@ import (
 	"os"
 
 	"github.com/dgraph-io/badger/v3"
-	"github.com/genjidb/genji"
-	"github.com/genjidb/genji/cmd/genji/dbutil"
-	"github.com/genjidb/genji/engine"
-	"github.com/genjidb/genji/engine/badgerengine"
-	"github.com/genjidb/genji/engine/boltengine"
-	"github.com/genjidb/genji/stringutil"
+	"github.com/tie/genji-release-test"
+	"github.com/tie/genji-release-test/cmd/genji/dbutil"
+	"github.com/tie/genji-release-test/engine"
+	"github.com/tie/genji-release-test/engine/badgerengine"
+	"github.com/tie/genji-release-test/engine/boltengine"
+	"github.com/tie/genji-release-test/stringutil"
 	"github.com/urfave/cli/v2"
 )
 
