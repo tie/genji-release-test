@@ -8,4 +8,4 @@ require (
 	github.com/tie/genji-release-test v0.12.0
 )
 
-replace github.com/tie/genji-release-test => ../../
+replace github.com/genjidb/genji => ../../

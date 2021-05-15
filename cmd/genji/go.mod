@@ -15,7 +15,6 @@ require (
 	golang.org/x/sync v0.0.0-20201207232520-09787c993a3a
 )
 
-replace (
-	github.com/tie/genji-release-test => ../../
-	github.com/tie/genji-release-test/engine/badgerengine => ../../engine/badgerengine
-)
+replace github.com/genjidb/genji => ../../
+
+replace github.com/genjidb/genji/engine/badgerengine => ../../engine/badgerengine
