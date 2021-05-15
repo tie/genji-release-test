@@ -3,11 +3,11 @@ package parser_test
 import (
 	"testing"
 
-	"github.com/genjidb/genji/database"
-	"github.com/genjidb/genji/document"
-	"github.com/genjidb/genji/query"
-	"github.com/genjidb/genji/sql/parser"
-	"github.com/genjidb/genji/testutil"
+	"github.com/tie/genji-release-test/database"
+	"github.com/tie/genji-release-test/document"
+	"github.com/tie/genji-release-test/query"
+	"github.com/tie/genji-release-test/sql/parser"
+	"github.com/tie/genji-release-test/testutil"
 	"github.com/stretchr/testify/require"
 )
 

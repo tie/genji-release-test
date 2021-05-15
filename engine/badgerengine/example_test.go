@@ -8,8 +8,8 @@ import (
 	"path/filepath"
 
 	"github.com/dgraph-io/badger/v3"
-	"github.com/genjidb/genji"
-	"github.com/genjidb/genji/engine/badgerengine"
+	"github.com/tie/genji-release-test"
+	"github.com/tie/genji-release-test/engine/badgerengine"
 )
 
 func Example() {

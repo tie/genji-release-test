@@ -6,7 +6,7 @@ import (
 	"encoding/binary"
 	"os"
 
-	"github.com/genjidb/genji/engine"
+	"github.com/tie/genji-release-test/engine"
 	bolt "go.etcd.io/bbolt"
 )
 

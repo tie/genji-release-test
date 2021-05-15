@@ -1,11 +1,11 @@
 package parser
 
 import (
-	"github.com/genjidb/genji/database"
-	"github.com/genjidb/genji/expr"
-	"github.com/genjidb/genji/query"
-	"github.com/genjidb/genji/sql/scanner"
-	"github.com/genjidb/genji/stringutil"
+	"github.com/tie/genji-release-test/database"
+	"github.com/tie/genji-release-test/expr"
+	"github.com/tie/genji-release-test/query"
+	"github.com/tie/genji-release-test/sql/scanner"
+	"github.com/tie/genji-release-test/stringutil"
 )
 
 // parseCreateStatement parses a create string and returns a Statement AST object.

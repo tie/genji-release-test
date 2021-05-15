@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/genjidb/genji/cmd/genji/commands"
+	"github.com/tie/genji-release-test/cmd/genji/commands"
 )
 
 func main() {

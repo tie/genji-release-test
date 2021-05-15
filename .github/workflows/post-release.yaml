@@ -96,14 +96,14 @@ jobs:
         run: |
           (
             cd engine/badgerengine
-            go mod edit -replace=github.com/genjidb/genji=../../ 
+            go mod edit -replace=github.com/tie/genji-release-test=../../ 
             go mod tidy
           )
           (
             cd cmd/genji
             go mod edit \
-              -replace=github.com/genjidb/genji=../../ \
-              -replace=github.com/genjidb/genji/engine/badgerengine=../../engine/badgerengine
+              -replace=github.com/tie/genji-release-test=../../ \
+              -replace=github.com/tie/genji-release-test/engine/badgerengine=../../engine/badgerengine
             go mod tidy
           )
       - name: Create PR

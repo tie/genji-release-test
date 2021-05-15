@@ -1,8 +1,8 @@
 package expr
 
 import (
-	"github.com/genjidb/genji/document"
-	"github.com/genjidb/genji/sql/scanner"
+	"github.com/tie/genji-release-test/document"
+	"github.com/tie/genji-release-test/sql/scanner"
 )
 
 // IsArithmeticOperator returns true if e is one of

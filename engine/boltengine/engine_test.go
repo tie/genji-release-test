@@ -6,9 +6,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/genjidb/genji/engine"
-	"github.com/genjidb/genji/engine/boltengine"
-	"github.com/genjidb/genji/engine/enginetest"
+	"github.com/tie/genji-release-test/engine"
+	"github.com/tie/genji-release-test/engine/boltengine"
+	"github.com/tie/genji-release-test/engine/enginetest"
 	"github.com/stretchr/testify/require"
 )
 
