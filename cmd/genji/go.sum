@@ -117,6 +117,10 @@ github.com/stretchr/testify v1.4.0/go.mod h1:j7eGeouHqKxXV5pUuKE4zz7dFj8WfuZ+81P
 github.com/stretchr/testify v1.6.1/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
 github.com/stretchr/testify v1.7.0 h1:nwc3DEeHmmLAfoZucVR881uASk0Mfjw8xYJ99tb5CcY=
 github.com/stretchr/testify v1.7.0/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
+github.com/tie/genji-release-test v0.0.8 h1:dQFbbyJymABdwtQp+cJwEP27R6uVMF12eOIlrIzH6k0=
+github.com/tie/genji-release-test v0.0.8/go.mod h1:GHr5YPjcJDv4cTaPjI2ibWjThHDdbMosgxMjjqtmTBk=
+github.com/tie/genji-release-test/engine/badgerengine v0.0.8 h1:Mf6pEpifzdPmT3H+dbv94dhVU0N5exN3YO1AzKNn5Hs=
+github.com/tie/genji-release-test/engine/badgerengine v0.0.8/go.mod h1:FzNQdAX+lYjQeaXYEBxalLOuaMS2SgR1T6awWuzOkAQ=
 github.com/twitchyliquid64/golang-asm v0.15.0/go.mod h1:a1lVb/DtPvCB8fslRZhAngC2+aY1QWCk3Cedj/Gdt08=
 github.com/ugorji/go/codec v0.0.0-20181204163529-d75b2dcb6bc8/go.mod h1:VFNgLljTbGfSG7qAOspJ7OScBnGdDN/yBr0sguwnwf0=
 github.com/urfave/cli/v2 v2.3.0 h1:qph92Y649prgesehzOrQjdWyxFOp/QVM+6imKHad91M=
