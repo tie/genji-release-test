@@ -5,8 +5,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/genjidb/genji/document"
-	"github.com/genjidb/genji/stringutil"
+	"github.com/tie/genji-release-test/document"
+	"github.com/tie/genji-release-test/stringutil"
 )
 
 // Catalog holds all table and index informations.

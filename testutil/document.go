@@ -7,8 +7,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/genjidb/genji/document"
-	"github.com/genjidb/genji/stringutil"
+	"github.com/tie/genji-release-test/document"
+	"github.com/tie/genji-release-test/stringutil"
 	"github.com/stretchr/testify/require"
 )
 

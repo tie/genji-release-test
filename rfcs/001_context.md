@@ -1,7 +1,7 @@
 - Feature name: `Cancelable operations and use of Context`
 - Date: 2020-10-10
 - Author: Asdine El Hrychy
-- Related discussions: [Issue #224](https://github.com/genjidb/genji/issues/224), [PR #231](https://github.com/genjidb/genji/pull/231)
+- Related discussions: [Issue #224](https://github.com/tie/genji-release-test/issues/224), [PR #231](https://github.com/tie/genji-release-test/pull/231)
 
 ## General approach
 

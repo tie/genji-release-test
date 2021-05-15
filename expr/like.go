@@ -1,10 +1,10 @@
 package expr
 
 import (
-	"github.com/genjidb/genji/document"
-	"github.com/genjidb/genji/query/glob"
-	"github.com/genjidb/genji/sql/scanner"
-	"github.com/genjidb/genji/stringutil"
+	"github.com/tie/genji-release-test/document"
+	"github.com/tie/genji-release-test/query/glob"
+	"github.com/tie/genji-release-test/sql/scanner"
+	"github.com/tie/genji-release-test/stringutil"
 )
 
 func like(pattern, text string) bool {

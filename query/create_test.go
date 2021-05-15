@@ -3,10 +3,10 @@ package query_test
 import (
 	"testing"
 
-	"github.com/genjidb/genji"
-	"github.com/genjidb/genji/database"
-	"github.com/genjidb/genji/document"
-	"github.com/genjidb/genji/sql/parser"
+	"github.com/tie/genji-release-test"
+	"github.com/tie/genji-release-test/database"
+	"github.com/tie/genji-release-test/document"
+	"github.com/tie/genji-release-test/sql/parser"
 	"github.com/stretchr/testify/require"
 )
 

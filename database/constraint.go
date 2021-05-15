@@ -3,8 +3,8 @@ package database
 import (
 	"strings"
 
-	"github.com/genjidb/genji/document"
-	"github.com/genjidb/genji/stringutil"
+	"github.com/tie/genji-release-test/document"
+	"github.com/tie/genji-release-test/stringutil"
 )
 
 // FieldConstraint describes constraints on a particular field.

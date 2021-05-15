@@ -4,9 +4,9 @@ import (
 	"context"
 	"errors"
 
-	"github.com/genjidb/genji/database"
-	"github.com/genjidb/genji/document"
-	"github.com/genjidb/genji/expr"
+	"github.com/tie/genji-release-test/database"
+	"github.com/tie/genji-release-test/document"
+	"github.com/tie/genji-release-test/expr"
 )
 
 // ErrResultClosed is returned when trying to close an already closed result.
