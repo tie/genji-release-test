@@ -117,10 +117,10 @@ github.com/stretchr/testify v1.4.0/go.mod h1:j7eGeouHqKxXV5pUuKE4zz7dFj8WfuZ+81P
 github.com/stretchr/testify v1.6.1/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
 github.com/stretchr/testify v1.7.0 h1:nwc3DEeHmmLAfoZucVR881uASk0Mfjw8xYJ99tb5CcY=
 github.com/stretchr/testify v1.7.0/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
-github.com/tie/genji-release-test v0.0.14 h1:SENGkoIWv59bY2o2qpPpTDE0HNQWz+ZjTaCnWUB4n7I=
-github.com/tie/genji-release-test v0.0.14/go.mod h1:GHr5YPjcJDv4cTaPjI2ibWjThHDdbMosgxMjjqtmTBk=
-github.com/tie/genji-release-test/engine/badgerengine v0.0.14 h1:I9ShwA8pfg6ger7Eqci4Og9IyesWkqQXxl5wuJZYNf0=
-github.com/tie/genji-release-test/engine/badgerengine v0.0.14/go.mod h1:WVRP68sIiDd27pjG0JRgPXbOjzIQtF4v5trmhis6aPE=
+github.com/tie/genji-release-test v0.0.15 h1:wM0Ny1D0zZHjik0yhMJPhBvEGFK/s06wHq/sCY+b/Fg=
+github.com/tie/genji-release-test v0.0.15/go.mod h1:GHr5YPjcJDv4cTaPjI2ibWjThHDdbMosgxMjjqtmTBk=
+github.com/tie/genji-release-test/engine/badgerengine v0.0.15 h1:myj3vIbHNuElaEJnr7pfqY34yR4imUS+sqWM3kkWMaA=
+github.com/tie/genji-release-test/engine/badgerengine v0.0.15/go.mod h1:CvQ3UhoLm5MyWnnmOQSsDwzGKbOCC811zKHE3IiOauk=
 github.com/twitchyliquid64/golang-asm v0.15.0/go.mod h1:a1lVb/DtPvCB8fslRZhAngC2+aY1QWCk3Cedj/Gdt08=
 github.com/ugorji/go/codec v0.0.0-20181204163529-d75b2dcb6bc8/go.mod h1:VFNgLljTbGfSG7qAOspJ7OScBnGdDN/yBr0sguwnwf0=
 github.com/urfave/cli/v2 v2.3.0 h1:qph92Y649prgesehzOrQjdWyxFOp/QVM+6imKHad91M=
