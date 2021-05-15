@@ -5,10 +5,10 @@ import (
 	"encoding/binary"
 	"errors"
 
-	"github.com/genjidb/genji/document"
-	"github.com/genjidb/genji/document/encoding"
-	"github.com/genjidb/genji/engine"
-	"github.com/genjidb/genji/stringutil"
+	"github.com/tie/genji-release-test/document"
+	"github.com/tie/genji-release-test/document/encoding"
+	"github.com/tie/genji-release-test/engine"
+	"github.com/tie/genji-release-test/stringutil"
 )
 
 // A Table represents a collection of documents.

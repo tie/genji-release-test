@@ -4,8 +4,8 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/genjidb/genji/document"
-	"github.com/genjidb/genji/stringutil"
+	"github.com/tie/genji-release-test/document"
+	"github.com/tie/genji-release-test/stringutil"
 )
 
 // A Function is an expression that execute some arbitrary code.

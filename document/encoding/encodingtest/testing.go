@@ -5,8 +5,8 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/genjidb/genji/document"
-	"github.com/genjidb/genji/document/encoding"
+	"github.com/tie/genji-release-test/document"
+	"github.com/tie/genji-release-test/document/encoding"
 	"github.com/stretchr/testify/require"
 )
 

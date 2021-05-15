@@ -7,8 +7,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/genjidb/genji"
-	"github.com/genjidb/genji/engine/boltengine"
+	"github.com/tie/genji-release-test"
+	"github.com/tie/genji-release-test/engine/boltengine"
 )
 
 func Example() {

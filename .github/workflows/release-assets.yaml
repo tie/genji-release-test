@@ -132,7 +132,7 @@ jobs:
       - name: Build release asset
         env:
           version: ${{ github.event.release.tag_name }}
-        run: go install github.com/genjidb/genji/cmd/genji@"${version}"
+        run: go install github.com/tie/genji-release-test/cmd/genji@"${version}"
 
       - name: Move asset to GOPATH/bin
         if: ${{ steps.go-env.outputs.hostos != matrix.os || steps.go-env.outputs.hostarch != matrix.arch }}

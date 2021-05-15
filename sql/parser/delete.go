@@ -1,11 +1,11 @@
 package parser
 
 import (
-	"github.com/genjidb/genji/expr"
-	"github.com/genjidb/genji/planner"
-	"github.com/genjidb/genji/sql/scanner"
-	"github.com/genjidb/genji/stream"
-	"github.com/genjidb/genji/stringutil"
+	"github.com/tie/genji-release-test/expr"
+	"github.com/tie/genji-release-test/planner"
+	"github.com/tie/genji-release-test/sql/scanner"
+	"github.com/tie/genji-release-test/stream"
+	"github.com/tie/genji-release-test/stringutil"
 )
 
 // parseDeleteStatement parses a delete string and returns a Statement AST object.

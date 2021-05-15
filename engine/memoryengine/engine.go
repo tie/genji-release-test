@@ -5,7 +5,7 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/genjidb/genji/engine"
+	"github.com/tie/genji-release-test/engine"
 	"github.com/google/btree"
 )
 

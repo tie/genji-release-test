@@ -1,5 +1,5 @@
 /*
-* CODE GENERATED AUTOMATICALLY WITH github.com/genjidb/genji/dev/gensqltest
+* CODE GENERATED AUTOMATICALLY WITH github.com/tie/genji-release-test/dev/gensqltest
 * THIS FILE SHOULD NOT BE EDITED BY HAND
  */
 package query_test
@@ -8,8 +8,8 @@ import (
 	"regexp"
 	"testing"
 
-	"github.com/genjidb/genji"
-	"github.com/genjidb/genji/testutil"
+	"github.com/tie/genji-release-test"
+	"github.com/tie/genji-release-test/testutil"
 	"github.com/stretchr/testify/require"
 )
 

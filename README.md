@@ -11,14 +11,14 @@
 
 ## Introduction
 
-[![Build Status](https://travis-ci.org/genjidb/genji.svg)](https://travis-ci.org/genjidb/genji)
-[![go.dev reference](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white&style=flat-square)](https://pkg.go.dev/github.com/genjidb/genji)
+[![Build Status](https://travis-ci.org/tie/genji-release-test.svg)](https://travis-ci.org/tie/genji-release-test)
+[![go.dev reference](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white&style=flat-square)](https://pkg.go.dev/github.com/tie/genji-release-test)
 [![Slack channel](https://img.shields.io/badge/slack-join%20chat-green.svg)](https://gophers.slack.com/messages/CKPCYQFE0)
-![Fuzz](https://github.com/genjidb/genji/workflows/Fuzz/badge.svg)
+![Fuzz](https://github.com/tie/genji-release-test/workflows/Fuzz/badge.svg)
 
 Genji is a schemaless database that allows running SQL queries on documents.
 
-Checkout the [SQL documentation](https://genji.dev/docs/genji-sql), the [Go doc](https://pkg.go.dev/github.com/genjidb/genji) and the [usage example](#usage) in the README to get started quickly.
+Checkout the [SQL documentation](https://genji.dev/docs/genji-sql), the [Go doc](https://pkg.go.dev/github.com/tie/genji-release-test) and the [usage example](#usage) in the README to get started quickly.
 
 > :warning: **Genji's API is still unstable**: Database compatibility is not guaranteed before reaching v1.0.0
 
@@ -36,7 +36,7 @@ Checkout the [SQL documentation](https://genji.dev/docs/genji-sql), the [Go doc]
 Install the Genji database
 
 ```bash
-go get github.com/genjidb/genji
+go get github.com/tie/genji-release-test
 ```
 
 ## Usage
@@ -53,8 +53,8 @@ import (
     "fmt"
     "log"
 
-    "github.com/genjidb/genji"
-    "github.com/genjidb/genji/document"
+    "github.com/tie/genji-release-test"
+    "github.com/tie/genji-release-test/document"
 )
 
 func main() {
@@ -163,7 +163,7 @@ func main() {
 
 ```go
 // import Genji as a blank import
-import _ "github.com/genjidb/genji/sql/driver"
+import _ "github.com/tie/genji-release-test/sql/driver"
 
 // Create a sql/database DB instance
 db, err := sql.Open("genji", "my.db")
@@ -188,7 +188,7 @@ Genji currently supports storing data in [BoltDB](https://github.com/etcd-io/bbo
 import (
     "log"
 
-    "github.com/genjidb/genji"
+    "github.com/tie/genji-release-test"
 )
 
 func main() {
@@ -203,7 +203,7 @@ func main() {
 import (
     "log"
 
-    "github.com/genjidb/genji"
+    "github.com/tie/genji-release-test"
 )
 
 func main() {
@@ -220,7 +220,7 @@ func main() {
 First install the module
 
 ```bash
-go get github.com/genjidb/genji/engine/badgerengine
+go get github.com/tie/genji-release-test/engine/badgerengine
 ```
 
 ```go
@@ -228,8 +228,8 @@ import (
     "context"
     "log"
 
-    "github.com/genjidb/genji"
-    "github.com/genjidb/genji/engine/badgerengine"
+    "github.com/tie/genji-release-test"
+    "github.com/tie/genji-release-test/engine/badgerengine"
     "github.com/dgraph-io/badger/v2"
 )
 
@@ -256,7 +256,7 @@ The genji command line provides an SQL shell that can be used to create, modify 
 Make sure the Genji command line is installed:
 
 ```bash
-go get github.com/genjidb/genji/cmd/genji
+go get github.com/tie/genji-release-test/cmd/genji
 ```
 
 Example:
@@ -278,6 +278,6 @@ Contributions are welcome!
 
 See [ARCHITECTURE.md](./ARCHITECTURE.md) and [CONTRIBUTING.md](.github/CONTRIBUTING.md).
 
-Thank you, [contributors](https://github.com/genjidb/genji/graphs/contributors)!
+Thank you, [contributors](https://github.com/tie/genji-release-test/graphs/contributors)!
 
-If you have any doubt, join the [Gophers Slack channel](https://gophers.slack.com/messages/CKPCYQFE0) or open an [issue](https://github.com/genjidb/genji/issues/new).
+If you have any doubt, join the [Gophers Slack channel](https://gophers.slack.com/messages/CKPCYQFE0) or open an [issue](https://github.com/tie/genji-release-test/issues/new).
