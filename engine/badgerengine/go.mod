@@ -7,3 +7,5 @@ require (
 	github.com/stretchr/testify v1.7.0
 	github.com/tie/genji-release-test v0.0.17
 )
+
+replace github.com/tie/genji-release-test => ../../
