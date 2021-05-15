@@ -6,8 +6,8 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/genjidb/genji/document/encoding"
-	"github.com/genjidb/genji/engine"
+	"github.com/tie/genji-release-test/document/encoding"
+	"github.com/tie/genji-release-test/engine"
 )
 
 // A Database manages a list of tables in an engine.

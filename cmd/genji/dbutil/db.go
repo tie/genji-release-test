@@ -7,12 +7,12 @@ import (
 	"time"
 
 	"github.com/dgraph-io/badger/v3"
-	"github.com/genjidb/genji"
-	"github.com/genjidb/genji/engine"
-	"github.com/genjidb/genji/engine/badgerengine"
-	"github.com/genjidb/genji/engine/boltengine"
-	"github.com/genjidb/genji/engine/memoryengine"
-	"github.com/genjidb/genji/stringutil"
+	"github.com/tie/genji-release-test"
+	"github.com/tie/genji-release-test/engine"
+	"github.com/tie/genji-release-test/engine/badgerengine"
+	"github.com/tie/genji-release-test/engine/boltengine"
+	"github.com/tie/genji-release-test/engine/memoryengine"
+	"github.com/tie/genji-release-test/stringutil"
 	"go.etcd.io/bbolt"
 )
 

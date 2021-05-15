@@ -3,8 +3,8 @@ package query
 import (
 	"errors"
 
-	"github.com/genjidb/genji/database"
-	"github.com/genjidb/genji/expr"
+	"github.com/tie/genji-release-test/database"
+	"github.com/tie/genji-release-test/expr"
 )
 
 // DropTableStmt is a DSL that allows creating a DROP TABLE query.

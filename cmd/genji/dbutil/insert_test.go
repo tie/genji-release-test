@@ -5,9 +5,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/genjidb/genji"
-	"github.com/genjidb/genji/document"
-	"github.com/genjidb/genji/testutil"
+	"github.com/tie/genji-release-test"
+	"github.com/tie/genji-release-test/document"
+	"github.com/tie/genji-release-test/testutil"
 	"github.com/stretchr/testify/require"
 )
 

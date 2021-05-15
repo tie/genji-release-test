@@ -8,7 +8,7 @@ import (
 	"strings"
 	"unicode/utf8"
 
-	"github.com/genjidb/genji/stringutil"
+	"github.com/tie/genji-release-test/stringutil"
 )
 
 // Code heavily inspired by the influxdata/influxql repository

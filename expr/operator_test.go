@@ -3,7 +3,7 @@ package expr_test
 import (
 	"testing"
 
-	"github.com/genjidb/genji/document"
+	"github.com/tie/genji-release-test/document"
 )
 
 func TestConcatExpr(t *testing.T) {

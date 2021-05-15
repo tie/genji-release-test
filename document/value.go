@@ -8,8 +8,8 @@ import (
 	"strconv"
 
 	"github.com/buger/jsonparser"
-	"github.com/genjidb/genji/binarysort"
-	"github.com/genjidb/genji/stringutil"
+	"github.com/tie/genji-release-test/binarysort"
+	"github.com/tie/genji-release-test/stringutil"
 )
 
 // ErrUnsupportedType is used to skip struct or array fields that are not supported.

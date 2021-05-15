@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/genjidb/genji"
-	"github.com/genjidb/genji/document"
-	"github.com/genjidb/genji/stringutil"
+	"github.com/tie/genji-release-test"
+	"github.com/tie/genji-release-test/document"
+	"github.com/tie/genji-release-test/stringutil"
 )
 
 // InsertJSON reads json documents from r and inserts them into the selected table.

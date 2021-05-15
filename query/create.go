@@ -1,9 +1,9 @@
 package query
 
 import (
-	"github.com/genjidb/genji/database"
-	"github.com/genjidb/genji/document"
-	"github.com/genjidb/genji/expr"
+	"github.com/tie/genji-release-test/database"
+	"github.com/tie/genji-release-test/document"
+	"github.com/tie/genji-release-test/expr"
 )
 
 // CreateTableStmt is a DSL that allows creating a full CREATE TABLE statement.

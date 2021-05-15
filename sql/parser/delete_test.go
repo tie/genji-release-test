@@ -3,9 +3,9 @@ package parser_test
 import (
 	"testing"
 
-	"github.com/genjidb/genji/planner"
-	"github.com/genjidb/genji/sql/parser"
-	"github.com/genjidb/genji/stream"
+	"github.com/tie/genji-release-test/planner"
+	"github.com/tie/genji-release-test/sql/parser"
+	"github.com/tie/genji-release-test/stream"
 	"github.com/stretchr/testify/require"
 )
 

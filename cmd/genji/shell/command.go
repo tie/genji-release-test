@@ -9,12 +9,12 @@ import (
 	"os"
 	"strings"
 
-	"github.com/genjidb/genji"
-	"github.com/genjidb/genji/cmd/genji/dbutil"
-	"github.com/genjidb/genji/database"
-	"github.com/genjidb/genji/document"
-	"github.com/genjidb/genji/engine"
-	"github.com/genjidb/genji/stringutil"
+	"github.com/tie/genji-release-test"
+	"github.com/tie/genji-release-test/cmd/genji/dbutil"
+	"github.com/tie/genji-release-test/database"
+	"github.com/tie/genji-release-test/document"
+	"github.com/tie/genji-release-test/engine"
+	"github.com/tie/genji-release-test/stringutil"
 )
 
 type command struct {

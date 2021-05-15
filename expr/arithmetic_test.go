@@ -3,8 +3,8 @@ package expr_test
 import (
 	"testing"
 
-	"github.com/genjidb/genji/document"
-	"github.com/genjidb/genji/expr"
+	"github.com/tie/genji-release-test/document"
+	"github.com/tie/genji-release-test/expr"
 )
 
 func TestArithmeticExpr(t *testing.T) {

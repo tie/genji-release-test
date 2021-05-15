@@ -6,9 +6,9 @@ import (
 	"errors"
 	"io"
 
-	"github.com/genjidb/genji/binarysort"
-	"github.com/genjidb/genji/document"
-	"github.com/genjidb/genji/document/encoding"
+	"github.com/tie/genji-release-test/binarysort"
+	"github.com/tie/genji-release-test/document"
+	"github.com/tie/genji-release-test/document/encoding"
 )
 
 // A Codec is a custom implementation of an encoding.Codec.

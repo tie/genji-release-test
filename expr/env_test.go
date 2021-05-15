@@ -3,9 +3,9 @@ package expr_test
 import (
 	"testing"
 
-	"github.com/genjidb/genji/database"
-	"github.com/genjidb/genji/document"
-	"github.com/genjidb/genji/expr"
+	"github.com/tie/genji-release-test/database"
+	"github.com/tie/genji-release-test/document"
+	"github.com/tie/genji-release-test/expr"
 	"github.com/stretchr/testify/require"
 )
 

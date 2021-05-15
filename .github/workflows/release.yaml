@@ -18,7 +18,7 @@ on:
 env:
   # Ensure that we have a chance to remove tags for failed release
   # before they are added to global sumdb and goproxy cache.
-  GOPRIVATE: github.com/genjidb/genji
+  GOPRIVATE: github.com/tie/genji-release-test
   # Enable reproducible builds.
   GOFLAGS: -trimpath
   CGO_ENABLED: '0'
@@ -79,7 +79,7 @@ jobs:
           echo "::set-output name=next::${next}"
           echo "::set-output name=branch::${branch}"
 
-      # Check github.com/genjidb/genji module.
+      # Check github.com/tie/genji-release-test module.
       #
       # This step will fail if version from input is not a valid semantic version for this release.
       # We use the version suggested by gorelease tool if there is no input (workflow on push event).
@@ -193,8 +193,8 @@ jobs:
         env:
           version: ${{ needs.prepare1.outputs.version }}
         run: |
-          go mod edit -dropreplace=github.com/genjidb/genji
-          go mod edit -require=github.com/genjidb/genji@"${version}"
+          go mod edit -dropreplace=github.com/tie/genji-release-test
+          go mod edit -require=github.com/tie/genji-release-test@"${version}"
           go mod tidy
       - name: Generate changelog
         working-directory: engine/badgerengine
@@ -260,8 +260,8 @@ jobs:
         env:
           version: ${{ needs.prepare1.outputs.version }}
         run: |
-          go mod edit -dropreplace=github.com/genjidb/genji
-          go mod edit -require=github.com/genjidb/genji@"${version}"
+          go mod edit -dropreplace=github.com/tie/genji-release-test
+          go mod edit -require=github.com/tie/genji-release-test@"${version}"
           go mod tidy
           git diff
           git add go.mod go.sum
@@ -305,10 +305,10 @@ jobs:
         env:
           version: ${{ needs.prepare1.outputs.version }}
         run: |
-          go mod edit -dropreplace=github.com/genjidb/genji
-          go mod edit -dropreplace=github.com/genjidb/genji/engine/badgerengine
-          go mod edit -require=github.com/genjidb/genji@"${version}"
-          go mod edit -require=github.com/genjidb/genji/engine/badgerengine@"${version}"
+          go mod edit -dropreplace=github.com/tie/genji-release-test
+          go mod edit -dropreplace=github.com/tie/genji-release-test/engine/badgerengine
+          go mod edit -require=github.com/tie/genji-release-test@"${version}"
+          go mod edit -require=github.com/tie/genji-release-test/engine/badgerengine@"${version}"
           go mod tidy
           git diff
           git add go.mod go.sum
@@ -402,15 +402,15 @@ jobs:
           git add go.mod go.sum
           (
             cd engine/badgerengine
-            go mod edit -replace=github.com/genjidb/genji=../../ 
+            go mod edit -replace=github.com/tie/genji-release-test=../../ 
             go mod tidy
             git diff
             git add go.mod go.sum
           )
           (
             cd cmd/genji
-            go mod edit -replace=github.com/genjidb/genji=../../
-            go mod edit -replace=github.com/genjidb/genji/engine/badgerengine=../../engine/badgerengine/
+            go mod edit -replace=github.com/tie/genji-release-test=../../
+            go mod edit -replace=github.com/tie/genji-release-test/engine/badgerengine=../../engine/badgerengine/
             go mod tidy
             git diff
             git add go.mod go.sum

@@ -4,11 +4,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/genjidb/genji"
+	"github.com/tie/genji-release-test"
 	"github.com/stretchr/testify/require"
 )
 
-// See issue https://github.com/genjidb/genji/issues/298
+// See issue https://github.com/tie/genji-release-test/issues/298
 func TestConcurrentTransactionManagement(t *testing.T) {
 	db, err := genji.Open(":memory:")
 	require.NoError(t, err)
