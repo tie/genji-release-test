@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/genjidb/genji/document"
-	"github.com/genjidb/genji/expr"
-	"github.com/genjidb/genji/sql/parser"
-	"github.com/genjidb/genji/stream"
-	"github.com/genjidb/genji/testutil"
+	"github.com/tie/genji-release-test/document"
+	"github.com/tie/genji-release-test/expr"
+	"github.com/tie/genji-release-test/sql/parser"
+	"github.com/tie/genji-release-test/stream"
+	"github.com/tie/genji-release-test/testutil"
 	"github.com/stretchr/testify/require"
 )
 

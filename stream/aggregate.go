@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"strings"
 
-	"github.com/genjidb/genji/document"
-	"github.com/genjidb/genji/expr"
-	"github.com/genjidb/genji/stringutil"
+	"github.com/tie/genji-release-test/document"
+	"github.com/tie/genji-release-test/expr"
+	"github.com/tie/genji-release-test/stringutil"
 )
 
 // A HashAggregateOperator consumes the given stream and outputs one value per group.

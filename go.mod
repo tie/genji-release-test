@@ -1,4 +1,4 @@
-module github.com/genjidb/genji
+module github.com/tie/genji-release-test
 
 go 1.16
 

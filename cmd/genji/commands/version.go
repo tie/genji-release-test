@@ -23,7 +23,7 @@ func NewVersionCommand() *cli.Command {
 
 			cliVersion = info.Main.Version
 			for _, mod := range info.Deps {
-				if mod.Path != "github.com/genjidb/genji" {
+				if mod.Path != "github.com/tie/genji-release-test" {
 					continue
 				}
 				// if a replace directive is set, Genji is in development mode

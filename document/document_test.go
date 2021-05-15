@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/genjidb/genji/document"
-	"github.com/genjidb/genji/sql/parser"
+	"github.com/tie/genji-release-test/document"
+	"github.com/tie/genji-release-test/sql/parser"
 	"github.com/stretchr/testify/require"
 )
 

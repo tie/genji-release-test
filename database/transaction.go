@@ -1,8 +1,8 @@
 package database
 
 import (
-	"github.com/genjidb/genji/engine"
-	"github.com/genjidb/genji/stringutil"
+	"github.com/tie/genji-release-test/engine"
+	"github.com/tie/genji-release-test/stringutil"
 )
 
 var (
