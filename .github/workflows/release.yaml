@@ -207,7 +207,7 @@ jobs:
         working-directory: engine/badgerengine
         run: perl -0pi -e 's/(\n.+)+\n+$//' changelog.txt
       - name: Download artifact
-        uses: actions/download-artifact@v2.0.9
+        uses: actions/download-artifact@v3.0.2
         with:
           name: release.txt
       - name: Concatenate release notes
@@ -328,7 +328,7 @@ jobs:
       id: ${{ steps.release.outputs.id }}
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v2.0.9
+        uses: actions/download-artifact@v3.0.2
         with:
           name: release.txt
       - name: Create release
